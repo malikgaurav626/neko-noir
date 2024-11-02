@@ -129,7 +129,7 @@ To have custom redis, change the REDIS_URL to the redis running port address.
 
 ## Future Improvements
 
-- Add sound effects and animations for a more engaging experience.
+- Add more sound effects, animations and music for a more engaging experience.
 - Implement multiplayer mode where multiple players can play against each other.
 - Introduce achievements and badges based on player performance.
 - Improve animation handling with a more efficient system. Currently, the game uses videos for animations; transitioning to a more responsive animation system would enhance performance and visual appeal.
