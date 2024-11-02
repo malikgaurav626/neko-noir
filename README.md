@@ -3,6 +3,26 @@
 Neko-Noir is an online single-player card game built with React and Vite, where players draw random cards from a deck of 5 cards with the aim of winning the game by drawing all cards without hitting the exploding kitten card. The game includes a leaderboard to record players’ wins using Redis as a database and a Golang backend.
 
 Demo: [Neko Noir](https://nekonoir.netlify.app)
+
+## Table of Contents
+- [Game Overview](#game-overview)
+  - [Card Types](#card-types)
+  - [Rules of the Game](#rules-of-the-game)
+  - [Bonus Features](#bonus-features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Game Mechanics](#game-mechanics)
+  - [Starting the Game](#starting-the-game)
+  - [Gameplay](#gameplay)
+  - [Winning Condition](#winning-condition)
+  - [Leaderboard](#leaderboard)
+- [Future Improvements](#future-improvements)
+- [License](#license)
+
+---
+
 ## Game Overview
 
 Neko-Noir is a card game where each game session consists of a randomized deck of 5 cards, and players draw cards to reveal them one by one. The goal is to draw all 5 cards without drawing the **Exploding Kitten** card. The game also features a **Leaderboard** that tracks users' wins. 
