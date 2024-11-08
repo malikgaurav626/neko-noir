@@ -43,6 +43,7 @@ func main() {
 	http.HandleFunc("/api/user", userHandler)
 	http.HandleFunc("/api/updateUser", updateUserHandler)
 	http.HandleFunc("/api/getUserIDByUsername", getUserIDByUsernameHandler)
+	http.HandleFunc("/api/keep-alive", keepAliveHandler)
 
 	// Set up CORS
 	c := cors.New(cors.Options{
@@ -274,4 +275,10 @@ func getUserIDByUsernameHandler(w http.ResponseWriter, r *http.Request) {
 
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(map[string]string{"userID": userID})
+}
+
+// New keep-alive handler
+func keepAliveHandler(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(http.StatusOK)
+	w.Write([]byte("Server is alive"))
 }
